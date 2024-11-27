@@ -24,6 +24,12 @@ spec:
       - name: spring-petclinic
         imagePullPolicy: Always
         image: quay.io/siamaksade/spring-petclinic:latest
+        resources:
+          limits:
+            memory: 1Gi
+          requests:
+            cpu: 100m
+            memory: 512Mi
         livenessProbe:
           failureThreshold: 3
           httpGet:
