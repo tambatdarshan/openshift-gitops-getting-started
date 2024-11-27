@@ -29,7 +29,7 @@ spec:
             memory: 1Gi
             #cpu: 100m
           requests:
-            cpu: 100m
+            #cpu: 100m
             memory: 512Mi
         livenessProbe:
           failureThreshold: 3
